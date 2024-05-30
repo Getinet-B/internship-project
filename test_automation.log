@@ -1,0 +1,43 @@
+2024-05-29 00:39:34,374 - support.logger - INFO - Started scenario: The user can click on “Connect the company” on the left side of the main page
+2024-05-29 00:39:46,033 - support.logger - INFO - Started step: <given "Open the main page">
+2024-05-29 00:39:49,558 - support.logger - INFO - Started step: <when "Log in to the page">
+2024-05-29 00:39:57,426 - support.logger - INFO - Started step: <when "Click on “Connect the company”">
+2024-05-29 00:40:01,666 - support.logger - WARNING - Step failed: <when "Click on “Connect the company”">
+2024-05-29 00:44:24,548 - support.logger - INFO - Started scenario: The user can click on “Connect the company” on the left side of the main page
+2024-05-29 00:44:36,227 - support.logger - INFO - Started step: <given "Open the main page">
+2024-05-29 00:44:38,895 - support.logger - INFO - Started step: <when "Log in to the page">
+2024-05-29 00:44:46,876 - support.logger - INFO - Started step: <when "Click on “Connect the company”">
+2024-05-29 00:44:51,048 - support.logger - WARNING - Step failed: <when "Click on “Connect the company”">
+2024-05-29 00:45:54,481 - support.logger - INFO - Started scenario: The user can click on “Connect the company” on the left side of the main page
+2024-05-29 00:46:05,784 - support.logger - INFO - Started step: <given "Open the main page">
+2024-05-29 00:46:09,249 - support.logger - INFO - Started step: <when "Log in to the page">
+2024-05-29 00:49:03,542 - support.logger - INFO - Started scenario: The user can click on “Connect the company” on the left side of the main page
+2024-05-29 00:49:20,628 - support.logger - INFO - Started step: <given "Open the main page">
+2024-05-29 00:49:24,181 - support.logger - INFO - Started step: <when "Log in to the page">
+2024-05-29 00:55:13,920 - support.logger - INFO - Started scenario: The user can click on “Connect the company” on the left side of the main page
+2024-05-29 00:55:18,589 - support.logger - INFO - Started step: <given "Open the main page">
+2024-05-29 00:55:24,128 - support.logger - INFO - Started step: <when "Log in to the page">
+2024-05-29 00:59:49,894 - support.logger - INFO - Started scenario: The user can click on “Connect the company” on the left side of the main page
+2024-05-29 00:59:52,398 - support.logger - INFO - Started step: <given "Open the main page">
+2024-05-29 00:59:55,283 - support.logger - INFO - Started step: <when "Log in to the page">
+2024-05-29 01:00:01,491 - support.logger - INFO - Started step: <when "Click on “Connect the company”">
+2024-05-29 01:00:43,681 - support.logger - INFO - Started scenario: The user can click on “Connect the company” on the left side of the main page
+2024-05-29 01:00:46,112 - support.logger - INFO - Started step: <given "Open the main page">
+2024-05-29 01:00:49,287 - support.logger - INFO - Started step: <when "Log in to the page">
+2024-05-29 01:00:55,484 - support.logger - INFO - Started step: <when "Click on “Connect the company”">
+2024-05-29 01:01:01,583 - support.logger - INFO - Started step: <when "Switch to the new tab">
+2024-05-29 01:01:04,607 - support.logger - INFO - Started step: <then "Verify the right tab opens">
+2024-05-29 01:01:04,613 - support.logger - WARNING - Step failed: <then "Verify the right tab opens">
+2024-05-29 01:06:25,614 - support.logger - INFO - Started scenario: The user can click on “Connect the company” on the left side of the main page
+2024-05-29 01:06:28,061 - support.logger - INFO - Started step: <given "Open the main page">
+2024-05-29 01:06:32,243 - support.logger - INFO - Started step: <when "Log in to the page">
+2024-05-29 01:06:38,450 - support.logger - INFO - Started step: <when "Click on “Connect the company”">
+2024-05-29 01:06:44,583 - support.logger - INFO - Started step: <when "Switch to the new tab">
+2024-05-29 01:06:47,602 - support.logger - INFO - Started step: <then "Verify the right tab opens">
+2024-05-29 01:06:47,640 - support.logger - WARNING - Step failed: <then "Verify the right tab opens">
+2024-05-29 01:10:19,128 - support.logger - INFO - Started scenario: The user can click on “Connect the company” on the left side of the main page
+2024-05-29 01:10:21,541 - support.logger - INFO - Started step: <given "Open the main page">
+2024-05-29 01:10:24,058 - support.logger - INFO - Started step: <when "Log in to the page">
+2024-05-29 01:10:30,271 - support.logger - INFO - Started step: <when "Click on “Connect the company”">
+2024-05-29 01:10:36,409 - support.logger - INFO - Started step: <when "Switch to the new tab">
+2024-05-29 01:10:39,436 - support.logger - INFO - Started step: <then "Verify the right tab opens">
