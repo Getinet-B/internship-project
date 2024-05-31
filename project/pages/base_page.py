@@ -1,17 +1,15 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
 from support.logger import logger
 
 
 class BasePage:
-
     def __init__(self, driver):
         self.driver = driver
         self.wait = WebDriverWait(self.driver, 10)
 
     def open(self, url):
-        logger.info(f'Opening {url}')
+        print(f"Opening URL: {url}")
         self.driver.get(url)
 
     def find_element(self, *locator):
@@ -44,7 +42,7 @@ class BasePage:
         self.wait.until(
             EC.invisibility_of_element_located(locator),
              f'Element still visible by {locator}'
-    )
+        )
 
     def get_current_window(self):
         current_window = self.driver.current_window_handle
