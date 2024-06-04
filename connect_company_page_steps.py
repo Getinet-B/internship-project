@@ -10,7 +10,7 @@ def open_main(context):
 
 @when('Log in to the page')
 def log_in_to_the_page(context):
-    context.app.login_page.login('getinet*****.com', '???????')
+    context.app.login_page.login('getinet12183@gmail.com', 'Gb12345678%/?')
     sleep(6)
 
 
