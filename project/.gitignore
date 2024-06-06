@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
 
 # C extensions
 *.so
@@ -57,6 +58,7 @@ target/
 .env
 .venv
 env/
+.env/
 venv/
 ENV/
 env.bak/
@@ -89,8 +91,9 @@ app_binaries/
 *.ipa
 
 .DS_Store
-
+Thumbs.db
 /features/test_results/*
 
 # Screenshots
 *.png
+
