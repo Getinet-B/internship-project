@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2024-05-29 00:39:34,374 - support.logger - INFO - Started scenario: The user can click on “Connect the company” on the left side of the main page
 2024-05-29 00:39:46,033 - support.logger - INFO - Started step: <given "Open the main page">
 2024-05-29 00:39:49,558 - support.logger - INFO - Started step: <when "Log in to the page">
@@ -290,3 +291,5 @@
 2024-06-03 22:02:30,681 - support.logger - INFO - Started step: <then "Verify the right tab opens">
 2024-06-03 22:02:30,714 - support.logger - INFO - Step passed: Verify the right tab opens
 2024-06-03 22:02:30,714 - support.logger - INFO - Finished scenario: <function scenario_name at 0x0000012A5FB02FC0>
+=======
+>>>>>>> 722c7d2d5f07024c52951e712b574f0e913d3921
