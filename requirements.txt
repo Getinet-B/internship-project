@@ -1,17 +1,4 @@
 allure-behave
-<<<<<<< HEAD
-behave~=1.2.6
-selenium~=4.18.1
-webdriver-manager
-basepage~=1.7.4
-pip~=24.0
-attrs~=23.2.0
-wheel~=0.43.0
-typing_extensions~=4.10.0
-six~=1.16.0
-pages~=0.3
-=======
 behave
 selenium
 webdriver-manager
->>>>>>> 722c7d2d5f07024c52951e712b574f0e913d3921
