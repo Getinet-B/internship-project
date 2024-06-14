@@ -12,3 +12,4 @@ class Application:
         self.login_page = LoginPage(driver)
         self.connect_company_page = ConnectCompanyPage(driver)
 
+

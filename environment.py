@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.wait import WebDriverWait
 from allure_behave.utils import scenario_name
 
-#from application import Application
+
 from app.application import Application
 from support.logger import logger
 import logging
@@ -25,9 +25,9 @@ def browser_init(context, scenario_name):
     :param scenario_name:
     :return:
     """
-    driver_path = ChromeDriverManager().install()
-    service = Service(driver_path)
-    context.driver = webdriver.Chrome(service=service)
+    # driver_path = ChromeDriverManager().install()
+    # service = Service(driver_path)
+    # context.driver = webdriver.Chrome(service=service)
 
     # driver_path = GeckoDriverManager().install()
     # service = Service(driver_path)
@@ -51,8 +51,28 @@ def browser_init(context, scenario_name):
     #     service=service
     # )
 
+    ### WEB MOBILE MODE ###
+    # Initialize the browser driver for mobile emulation
+    mobile_emulation = {"deviceName": "Samsung Galaxy S20 Ultra"}
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_experimental_option("mobileEmulation", mobile_emulation)
+
+    try:
+        service = Service(ChromeDriverManager().install())
+        context.driver = webdriver.Chrome(
+            options=chrome_options,
+            service=service
+        )
+        context.driver.set_window_size(360, 740)
+        context.driver.implicitly_wait(6)
+        context.wait = WebDriverWait(context.driver, timeout=15)
+        context.app = Application(context.driver)
+    except Exception as e:
+        logger.error(f"Error initializing the browser: {e}")
+        raise
+
     ### BROWSERSTACK ###
-    # Register for BrowserStack, then grab it from https://www.browserstack.com/accounts/settings
+    # # Register for BrowserStack, then grab it from https://www.browserstack.com/accounts/settings
     # bs_user = 'getinetbogale_RTD9et'
     # bs_key = 'if6pZ2sM64Cm7EbPeAgh'
     # url = f'http://{bs_user}:{bs_key}@hub-cloud.browserstack.com/wd/hub'
@@ -67,11 +87,11 @@ def browser_init(context, scenario_name):
     # options.set_capability('bstack:options', bstack_options)
     # context.driver = webdriver.Remote(command_executor=url, options=options)
     #
-    context.driver.maximize_window()
-    context.driver.implicitly_wait(4)
-    context.wait = WebDriverWait(context.driver, timeout=15)
+    # context.driver.maximize_window()
+    # context.driver.implicitly_wait(4)
+    # context.wait = WebDriverWait(context.driver, timeout=15)
     #
-    context.app = Application(context.driver)
+    # context.app = Application(context.driver)
 
 
 def before_scenario(context, scenario):
